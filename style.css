@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: serif;
+    background-color: #dfdfdf;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    gap: 10px;
+}
+h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+p{
+    font-weight: 500;
+    font-size: 20px;
+}
