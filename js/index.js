@@ -63,7 +63,7 @@ console.log(`fullName: ${fullName}`);
 //4
 let userName = "Олександро";
 let payment = 300;
-alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`)
+alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
 
 //
 setInterval(function(){
