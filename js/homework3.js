@@ -4,8 +4,8 @@ console.clear();
 let result = 5 + 5 + "5";
 console.log(result, typeof result);
 //2
-let email = "sofiafasii@gmail.com"
-console.log(email, email.includes("@"), email.length)
+let email = "sofiafasii@gmail.com";
+console.log(email, email.includes("@"), email.length);
 //3
 let word1 = "My";
 let word2 = "name";
