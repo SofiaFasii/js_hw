@@ -11,7 +11,7 @@ body{
     background: #324d66;
 }
 .container{
-    padding: 30px 30px;
+    padding: 30px 40px;
     border-radius: 12px;
     background: #ffffff;
 }
@@ -30,7 +30,7 @@ body{
 }
 h2{
     font-size: 1.5em;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 ul{
     display: flex;
@@ -57,10 +57,10 @@ a:hover {
     color: #ffffff;
 }
 p:last-child{
-    padding-bottom: 35px;
+    padding-bottom: 40px;
 }
 
-.task p {
+.tasks p {
     font-size: 1.3em;
     line-height: 30px;
 }

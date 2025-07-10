@@ -1,0 +1,42 @@
+.tasks{
+  text-align: center;
+}
+h2{
+  text-align: left;
+}
+h3 {
+  padding-bottom: 15px;
+  font-size: 1.27em;
+  color: rgb(59, 59, 59);
+}
+input{
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+button {
+  padding: 10px 25px;
+  background-color: #46a089;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.task-one-bth:hover {
+  background-color: #367e6c;
+}
+#result, #result-two, #result-three, #result-four {
+  font-size: .9em;
+  padding: 15px 0 15px 0;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.success {
+  color: rgb(14, 87, 14);
+}
+.error {
+  color: rgb(134, 15, 15);
+}
+.warning {
+  color: rgb(197, 169, 12);
+}

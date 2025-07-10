@@ -3,24 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Завдання 4</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Домашнє №4</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/homework4.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="homework-title">Завдання 4</h1>
-        <div class="task">
+        <h1 class="homework-title">Домашнє №4</h1>
+        <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <div class="task-one">
+                <h3>Перевірка текстових полів </h3>
+                <input type="text" id="stringOne" placeholder="Ваше ім'я" class="input-string">
+                <input type="text" id="stringTwo" placeholder="Ваше прізвище" class="input-string">
+                <br>
+                <button onclick="checkFields()" class="task-one-bth">Перевірити</button>
+                <p id="result"></p>
+            </div>
+            <div class="task-two">
+                <h3>Перевірка суми чисел</h3>
+                <input type="number" id="numberOne" placeholder="Введіть перше число">
+                <input type="number" id="numberTwo" placeholder="Введіть друге число">
+                <br>
+                <button onclick="checkSum()">Перевірити</button>
+                <p id="result-two"></p>
+            </div>
+             <div class="task-three">
+                <h3>Перевірка тексту на JavaScript</h3>
+                <input type="text" id="text-input" placeholder="Введіть текст">
+                <button onclick="checkJavaScript()">Перевірити</button>
+                <p id="result-three"></p>
+            </div>
+            <div class="task-four">
+                <h3>Перевірка числа на діапазон</h3>
+                <input type="number" id="number-input" placeholder="Введіть число">
+                <br>
+                <button onclick="checkRange()">Перевірити</button>
+                <p id="result-four"></p>
+            </div>
+            <div class="task-five">
+                <h3>Перевірка форми з перенаправленням</h3>
+                <input type="text" id="name-input-five" placeholder="Введіть ім'я">
+                <input type="email" id="email-input-five" placeholder="Введіть email">
+                <input type="password" id="password-input-five" placeholder="Введіть пароль">
+                <br>
+                <button onclick="checkRedirectForm()">Перевірити</button>
+                <p id="result-five"></p>
+            </div>
         </div>
         <a href="../index.html">Повернутися до списку завдань</a>
     </div>
