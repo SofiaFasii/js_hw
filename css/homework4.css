@@ -1,6 +1,9 @@
 .tasks{
   text-align: center;
 }
+.container{
+    width: 50%;
+}
 h2{
   text-align: left;
 }
@@ -16,18 +19,19 @@ input{
 }
 button {
   padding: 10px 25px;
-  background-color: #46a089;
+  background-color: #4695a0;
+  border-radius: 3px;
   color: white;
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
 }
-.task-one-bth:hover {
-  background-color: #367e6c;
+button:hover {
+  background-color: #36707e;
 }
-#result, #result-two, #result-three, #result-four {
+#result, #result-two, #result-three, #result-four, #result-five {
   font-size: .9em;
-  padding: 15px 0 15px 0;
+  padding: 10px 0 50px 0;
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -39,4 +43,9 @@ button {
 }
 .warning {
   color: rgb(197, 169, 12);
+}
+.task-five{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
