@@ -2,50 +2,15 @@
   text-align: center;
 }
 .container{
-    width: 50%;
-}
-h2{
-  text-align: left;
-}
-h3 {
-  padding-bottom: 15px;
-  font-size: 1.27em;
-  color: rgb(59, 59, 59);
-}
-input{
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
-}
-button {
-  padding: 10px 25px;
-  background-color: #4695a0;
-  border-radius: 3px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-button:hover {
-  background-color: #36707e;
-}
-#result, #result-two, #result-three, #result-four, #result-five {
-  font-size: .9em;
-  padding: 10px 0 50px 0;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-.success {
-  color: rgb(14, 87, 14);
-}
-.error {
-  color: rgb(134, 15, 15);
-}
-.warning {
-  color: rgb(197, 169, 12);
+    width: 60%;
 }
 .task-five{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+input{
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
 }

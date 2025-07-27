@@ -1,0 +1,10 @@
+.form-one{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.tasks{
+  text-align: center;
+}

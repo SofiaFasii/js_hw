@@ -29,8 +29,16 @@ body{
     padding-bottom: 20px;
 }
 h2{
+    text-align: left;
     font-size: 1.5em;
     padding-bottom: 25px;
+}
+h3 {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 1.27em;
+    color: rgba(48, 48, 48, 0.945);
 }
 ul{
     display: flex;
@@ -59,8 +67,34 @@ a:hover {
 p:last-child{
     padding-bottom: 40px;
 }
-
+.bth-hw {
+  padding: 10px 25px;
+  background-color: #4695a0;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.bth-hw:hover {
+  background-color: #36707e;
+}
 .tasks p {
     font-size: 1.3em;
     line-height: 30px;
+}
+p[id*="result"]{
+  font-size: .85em;
+  padding: 10px 0 50px 0;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.success {
+    color: rgb(14, 87, 14);
+}
+.error {
+    color: rgb(134, 15, 15);
+}
+.warning {
+    color: rgb(197, 169, 12);
 }

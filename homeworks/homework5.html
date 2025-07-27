@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Домашнє №5</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/homework5.css">
 </head>
 <body>
     <div class="container">
         <h1 class="homework-title">Домашнє №5</h1>
         <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <div class="task-one">
+                <h3>Що вам більше подобається?</h3>
+                <form class="form-one" id="form-drinks">
+                    <label>
+                        <input type="radio" name="drink" value="coffee">
+                        Кава
+                    </label>
+                    <label>
+                        <input type="radio" name="drink" value="tea">
+                        Чай
+                    </label>
+                    <label>
+                        <input type="radio" name="drink" value="juice">
+                        Сік
+                    </label>
+                    <label>
+                        <input type="radio" name="drink" value="other">
+                        Інше
+                    </label>
+                </form>
+                <button class="bth-hw" onclick="checkDrink()">Перевірити</button>
+                <p id="hw5-result-one"></p>
+            </div>
         </div>
         <a href="../index.html">Повернутися до списку завдань</a>
     </div>
