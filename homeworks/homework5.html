@@ -14,7 +14,7 @@
             <h2>Результат виконання з'явиться тут:</h2>
             <div class="task-one">
                 <h3>Що вам більше подобається?</h3>
-                <form class="form-one" id="form-drinks">
+                <form class="hw5-form-one" id="form-drinks">
                     <label>
                         <input type="radio" name="drink" value="coffee">
                         Кава
@@ -32,8 +32,54 @@
                         Інше
                     </label>
                 </form>
-                <button class="bth-hw" onclick="checkDrink()">Перевірити</button>
+                <button class="btn-hw" onclick="checkDrink()">Перевірити</button>
                 <p id="hw5-result-one"></p>
+            </div>
+            <div class="task-two">
+                <h3>Перевірка днів тижня.</h3>
+                <input type="text" id="input-week" placeholder="Введіть день тижня" class="input-week">
+                <button class="btn-hw" onclick="checkWeek()">Перевірити</button>
+                <p id="hw5-result-two"></p>
+            </div>
+            <div class="task-three">
+                <h3>Перевірка пори року.</h3>
+                <input type="number" id="input-month" placeholder="Введіть номер місяця (1–12)" class="input-month">
+                <button class="btn-hw" onclick="checkMonth()">Перевірити</button>
+                <p id="hw5-result-three"></p>
+            </div>
+            <div class="task-four">
+                 <h3>Перевір кольори світлофору.</h3>
+                 <form class="hw5-form-two" id="form-colors">
+                    <label>
+                        <input type="radio" name="color" value="red">
+                        Червоний
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="yellow">
+                        Жовтий
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="green">
+                        Зелений
+                    </label>
+                 </form>
+                 <button class="btn-hw" onclick="checkColor()">Перевірити</button>
+                 <p id="hw5-result-four"></p>
+            </div>
+            <div class="task-five">
+                <h3>Міні калькулятор.</h3>
+                <input type="number" id="input-num-one" placeholder="Введіть перше число" class="input-num-one">
+                <select id="select-operator">
+                    <option value=""></option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="input-num-two" placeholder="Введіть друге число" class="input-num-two">
+                <br>
+                <button class="btn-hw"  onclick="checkOperation()">Перевірити</button>
+                <p id="hw5-result-five"></p>
             </div>
         </div>
         <a href="../index.html">Повернутися до списку завдань</a>

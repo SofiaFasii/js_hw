@@ -57,13 +57,15 @@ function checkJavaScript() {
     if (text === "") {
         result = "Будь ласка, введіть текст";
         resultElement.className = "error";
-    } else if (text.includes("JavaScript")) {
+        }
+    else if (text.includes("JavaScript")) {
         result = "Текст містить слово JavaScript";
         resultElement.className = "success";
-    } else {
+        }
+    else {
         result = "Текст не містить слово JavaScript";
         resultElement.className = "warning ";
-    }
+        }
 
     resultElement.textContent = result;
     console.log(result);
@@ -102,13 +104,15 @@ function checkForm() {
     if (name === "" || email === "" || password === "") {
         result = "Будь ласка, заповніть усі поля";
         resultElement.className = "error";
-    } else if (name.length >= 3 && email.includes("@") && email.includes(".", email.indexOf("@")) && password.length >= 6) {
+        }
+    else if (name.length >= 3 && email.includes("@") && email.includes(".", email.indexOf("@")) && password.length >= 6) {
         result = "Всі поля заповнені коректно";
         resultElement.className = "success";
-    } else {
+        }
+    else {
         result = "Одне або кілька полів заповнені некоректно";
         resultElement.className = "error";
-    }
+        }
 
     resultElement.textContent = result;
     console.log(result);}
@@ -123,13 +127,15 @@ function checkRedirectForm() {
     if (name === "" || email === "" || password === "") {
         result = "Будь ласка, заповніть усі поля";
         resultElement.className = "error";
-    } else if (name.length >= 3 && email.includes("@") && email.includes(".", email.indexOf("@")) && password.length >= 6) {
+        }
+    else if (name.length >= 3 && email.includes("@") && email.includes(".", email.indexOf("@")) && password.length >= 6) {
         result = "Перенаправлення на іншу сторінку";
         resultElement.className = "success";
-    } else {
+        }
+    else {
         result = "Помилка: неправильне заповнення";
         resultElement.className = "error";
-    }
+        }
 
     resultElement.textContent = result;
     console.log(result);
