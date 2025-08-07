@@ -1,0 +1,6 @@
+.tasks{
+  text-align: center;
+}
+h3 + p{
+    padding-bottom: 15px;
+}

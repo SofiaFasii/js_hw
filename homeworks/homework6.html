@@ -5,22 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Домашнє №6</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/homework6.css">
 </head>
 <body>
     <div class="container">
         <h1 class="homework-title">Домашнє №6</h1>
         <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <div class="task-one">
+                <h3>Числа від 1 до 10:</h3>
+                <p id="numbers"></p>
+                <button class="btn-hw" onclick="checkNumbers()">Перевірити</button>
+                <p id="hw6-result-one"></p>
+            </div>
+            <div class="task-two">
+                <h3>Парні числа від 2 до 20.</h3>
+                <p id="even-num"></p>
+                <button class="btn-hw" onclick="checkEvenNum()">Перевірити</button>
+                <p id="hw6-result-two"></p>
+            </div>
+            <div class="task-three">
+                <h3>Таблиця множення числа 7.</h3>
+                <p id="mult-seven"></p>
+                <button class="btn-hw" onclick="checkMult7()">Перевірити</button>
+                <p id="hw6-result-three"></p>
+            </div>
         </div>
         <a href="../index.html">Повернутися до списку завдань</a>
     </div>

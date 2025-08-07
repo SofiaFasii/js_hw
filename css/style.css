@@ -68,13 +68,13 @@ p:last-child{
     padding-bottom: 40px;
 }
 .btn-hw {
-  padding: 10px 25px;
-  background-color: #4695a0;
-  border-radius: 3px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
+    padding: 10px 25px;
+    background-color: #4695a0;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 .btn-hw:hover {
   background-color: #36707e;
