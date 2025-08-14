@@ -52,3 +52,44 @@ function checkMult7(){
     resultElement.innerHTML = "Ось множення на 7.";
     resultElement.className = "success";
 }
+//4 не сильно зрозуміла це завданння
+function checkN() { 
+    let inputN = document.getElementById("hw6-input-one").value;
+    let resultElement = document.getElementById("hw6-result-four");
+    if (inputN <= 0) {
+        resultElement.textContent = "Введіть коректне число більше за 0!";
+        resultElement.className = "error";
+        return; 
+    }
+    let printedNum = [];
+    for (let i = 0; i < 350; i++) {
+        if (i >= inputN) {
+            break; 
+        }
+        console.log(i); 
+        printedNum.push(i); 
+    }
+    resultElement.textContent = `Числа менші за ${inputN}: ${printedNum.join(", ")}`;
+    resultElement.className = "success";
+}
+//5
+function checkNumb() { 
+    let numb = document.getElementById("numb");
+    let resultElement = document.getElementById("hw6-result-five");
+    let i = 1;
+
+    let numbersArray = [];
+    
+    while (i <= 20) {
+        if (i % 3 === 0) { 
+            i++;
+            continue; 
+        }
+        numbersArray.push(i);
+        i++;
+    }
+    numb.textContent = numbersArray.join(", ") + ".";
+
+    resultElement.textContent = "Числа 1–20 крім кратних трьох.";
+    resultElement.className = "success";
+}
