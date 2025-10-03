@@ -79,6 +79,9 @@ p:last-child{
 .btn-hw:hover {
   background-color: #36707e;
 }
+.tasks{
+  text-align: center;
+}
 .tasks p {
     font-size: 1.3em;
     line-height: 30px;
