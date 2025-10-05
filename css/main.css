@@ -84,8 +84,8 @@ p:last-child{
   text-align: center;
 }
 .tasks p {
+    padding-bottom: 15px;
     font-size: 1.3em;
-    line-height: 30px;
 }
 p[id*="result"]{
   font-size: .85em;
@@ -120,7 +120,4 @@ input[type="radio"] {
   height: 6px;
   border-radius: 50%;
   background-color: rgb(0, 18, 122);
-}
-h3 + p{
-    padding-bottom: 15px;
 }
