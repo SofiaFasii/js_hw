@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,32 +12,34 @@ body{
 .container{
     padding: 30px 40px;
     border-radius: 12px;
+    width: 1000px;
     background: #ffffff;
 }
 .title{
-    padding: 0 60px;
-    text-align: center;
-    color: #202222;
-    font-size: 3em;
     margin-bottom: 30px;
-    text-shadow: 1px 2px 4px rgba(27, 55, 61, 0.5);
+    text-align: center;
+    font-size: 3em;
     letter-spacing: 5px;
+    text-shadow: 1px 2px 4px rgba(27, 55, 61, 0.5);
+    color: #202222;
 }
-.homework-title{
-    font-size: 2.5em;
+h1{
     padding-bottom: 20px;
+    font-size: 2.5em;
+    color: #202222;
 }
 h2{
+    padding-bottom: 25px;
     text-align: left;
     font-size: 1.5em;
-    padding-bottom: 25px;
+    color: #2a3a49dc;
 }
 h3 {
-    font-weight: 400;
+    padding: 25px 0 15px 0;
     text-align: center;
-    padding-bottom: 15px;
     font-size: 1.27em;
-    color: rgba(48, 48, 48, 0.945);
+    font-weight: 400;
+    color: rgba(48, 48, 48, 0.89);
 }
 ul{
     display: flex;
@@ -53,10 +54,10 @@ a{
     padding: 17px 30px;
     border-radius: 6px;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
     background: #546280bb;
     color: #202222;
-    font-weight: 600;
-    transition: 0.3s ease; 
 }
 a:hover {
     background-color: #404470d7;
@@ -88,7 +89,7 @@ p:last-child{
 }
 p[id*="result"]{
   font-size: .85em;
-  padding: 10px 0 50px 0;
+  padding-top: 10px;
   font-weight: 600;
   font-family: sans-serif;
 }
@@ -109,7 +110,6 @@ input{
 input[type="radio"] {
   position: relative;
 }
-
 [type="radio"]:checked::before {
   content: '';
   position: absolute;
@@ -120,4 +120,7 @@ input[type="radio"] {
   height: 6px;
   border-radius: 50%;
   background-color: rgb(0, 18, 122);
+}
+h3 + p{
+    padding-bottom: 15px;
 }

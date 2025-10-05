@@ -1,0 +1,6 @@
+ .page-1 .tasks, .page-2 .tasks, .page-3 .tasks {
+  text-align: left;
+}
+.page-7 .strings{
+    white-space: pre-line;
+}

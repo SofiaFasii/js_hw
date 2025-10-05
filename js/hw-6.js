@@ -5,7 +5,7 @@ function checkNumbers(){
     let number = 1;
     let numbers = "";
     let numbersElement = document.getElementById("numbers");
-    let resultElement = document.getElementById("hw6-result-one")
+    let resultElement = document.getElementById("hw6-result-one");
 
     while(number <= 10){
         console.log(number);
