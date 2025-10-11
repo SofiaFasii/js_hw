@@ -4,3 +4,58 @@
 .page-7 .strings{
     white-space: pre-line;
 }
+.page-4 .task-five{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-5 form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.page-5 form input{
+  width: 12px;
+  height: 12px;
+}
+.page-5 .hw5-form-two{
+  display: flex;
+  flex-direction: column;
+}
+.page-5 .hw5-form-two label:nth-child(1){
+  color: rgb(163, 0, 0);
+}
+.page-5 .hw5-form-two label:nth-child(2){
+  color: rgb(219, 216, 0);
+}
+.page-5 .hw5-form-two label:nth-child(3){
+  color: rgb(28, 170, 0);
+}
+
+.page-5 .hw5-form-two label:nth-child(1) [type="radio"]:checked::before{
+  background-color: rgb(255, 0, 0);
+}
+.page-5 .hw5-form-two label:nth-child(2) [type="radio"]:checked::before{
+  background-color: rgb(255, 251, 0);
+}
+.page-5 .hw5-form-two label:nth-child(3) [type="radio"]:checked::before{
+  background-color: rgb(43, 255, 0);
+}
+.page-8 .cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.page-8 .card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 130px;
+  background: #8ba77488;
+  cursor: pointer;
+}

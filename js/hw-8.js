@@ -24,3 +24,26 @@ function unite(){
     strHarmful.className = "error";
 }
 //2
+let container = document.querySelector(".cards-container")
+let cards = ["Карточка-1", "Карточка-2", "Карточка-3", "Карточка-4", "Карточка-5"]
+
+function renderCards(){
+    container.textContent = ''
+    for(let card of cards){
+        const div = document.createElement("div")
+        div.className = 'card'
+        div.textContent = card
+        container.appendChild(div)
+    }
+}
+renderCards()
+
+function toggleCard(){
+
+}
+function addCard(){
+
+}
+function updateCard(){
+
+}

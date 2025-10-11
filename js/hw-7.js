@@ -26,7 +26,7 @@ function addString(){
     resultElem.className = "success";
 }
 //3
-const num = [1, 7, 999];
+const num = [2, 7, 1];
 let sum = document.querySelector(".sum");
 sum.textContent = `${num.join(" + ")} =`;
 
@@ -83,7 +83,4 @@ function checkEven(){
         }
     }
     evenNum.textContent = text;
-
-    resultElem.innerHTML = "Фантазія закінчилася :(";
-    resultElem.className = "error";
 }
