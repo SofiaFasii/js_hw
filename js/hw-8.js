@@ -37,13 +37,56 @@ function renderCards(){
     }
 }
 renderCards()
-
-function toggleCard(){
-
+let toggleR = document.getElementById("toggle-rr")
+let deleted = []
+let isRemoved = false
+function toggleRR(){
+    if(!isRemoved){
+        deleted = cards.splice(2, 1)
+        isRemoved = true
+        toggleR.textContent = 'Повернути карточку-3'
+    }
+    else{
+        cards.splice(2, 0, deleted[0])
+        deleted = []
+        isRemoved = false
+        toggleR.textContent = 'Видалити карточку-3'
+    }
+    renderCards()
 }
-function addCard(){
+let toggleA = document.getElementById('toggle-ar')
+let isCardAdded = false
 
+function  toggleAR(){
+    const cardSix = "Карточка-6"
+    if(!isCardAdded){
+        cards.splice(5, 0, cardSix)
+        isCardAdded = true
+        toggleA.textContent = 'Видалити карточку-6'
+    }
+    else{
+        cards.splice(5, 1)
+        isCardAdded = false
+        toggleA.textContent = 'Додати карточку-6'
+    }
+    renderCards()
 }
-function updateCard(){
+let toggleUp = document.getElementById('update-card');
+let isCardUp = false;
+let previousCard;
 
+function updateCard() {
+    const newCard = "Карточка-92";
+    if (!isCardUp) {
+        previousCard = cards[3];
+        cards.splice(3, 1, newCard);
+        isCardUp = true;
+        toggleUp.textContent = 'Повернути карточку-4';
+    } else {
+        cards.splice(3, 1, previousCard);
+        isCardUp = false;
+        toggleUp.textContent = 'Замінити карточку-4';
+    }
+
+    renderCards()
 }
