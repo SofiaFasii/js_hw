@@ -13,8 +13,24 @@
         <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
             <div class="task-one">
+                <h3>[номер елемента] - [значення елемента].</h3>
+                <p class="element-value"></p>
+                <button class="btn-hw" onclick="logItems(mas)">Перевірити</button>
             </div>
             <div class="task-two">
+                <h3>Підрахунку вартості гравіювання кількості слів.</h3>
+                <input type="text" id="input-engraving" placeholder="Введіть текст для гравіювання">
+                <br>
+                <p id="result">Ціна за слово 5грн.</p>
+                <button class="btn-hw" onclick="calculateEngravingPrice()">Порахувати вартість</button>
+                <p id="hw9-result-one"></p>
+            </div>
+            <div class="task-three">
+                <h3>Перевірка на найдовше слово.</h3>
+                <input type="text" id="input-string" placeholder="Введіть слова, які хочете перевірити">
+                <br>
+                <button class="btn-hw" onclick="findLongestWord()">Перевірити</button>
+                <p id="hw9-result-two"></p>
             </div>
         </div>
         <a href="../index.html" class="btn-back">Повернутися до списку завдань</a>
