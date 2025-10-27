@@ -84,10 +84,10 @@ p[id*="result"] {
   font-family: sans-serif;
 }
 .success {
-  color: rgb(14, 87, 14);
+  color: rgb(18, 110, 18);
 }
 .error {
-  color: rgb(134, 15, 15);
+  color: rgb(153, 17, 17);
 }
 .warning {
   color: rgb(197, 169, 12);

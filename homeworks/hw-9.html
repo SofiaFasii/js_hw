@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/override.css">
 </head>
+
 <body class="page-8">
     <div class="container">
         <h1>Домашнє №9</h1>
@@ -32,9 +34,35 @@
                 <button class="btn-hw" onclick="findLongestWord()">Перевірити</button>
                 <p id="hw9-result-two"></p>
             </div>
+            <div class="task-four">
+                <h3>40 символів.</h3>
+                <input type="text" id="input-format" placeholder="Введіть текст, який хочете відформатувати.">
+                <br>
+                <button class="btn-hw" onclick="findLW()">Перевірити</button>
+                <p id="hw9-result-three"></p>
+            </div>
+            <div class="task-five">
+                <h3>Перевірка тексту на вміст spam і sale.</h3>
+                <input type="text" id="input-check" placeholder="Введіть текст, який хочете перевірити.">
+                <br>
+                <button class="btn-hw" onclick="checkSpam()">Перевірити</button>
+                <p id="hw9-result-four"></p>
+            </div>
+            <div class="task-six">
+                <h3>Prompt. Введення чисел.</h3>
+                <p id="hw9-result-five"></p>
+                <button class="btn-hw" onclick="askNumber()">Викликати prompt</button>
+            </div>
+            <div class="task-seven">
+                <h3>Доавання логіну.</h3>
+                <input type="text" id="input-login" placeholder="Введіть логін.">
+                <br>
+                <button class="btn-hw" onclick="handleLogin()">Перевірити логін</button>
+                <p id="hw9-result-six"></p>
+            </div>
         </div>
         <a href="../index.html" class="btn-back">Повернутися до списку завдань</a>
-    </div>
-    <script src="../js/hw-9.js"></script>
+        <script src="../js/hw-9.js"></script>
 </body>
+
 </html>
