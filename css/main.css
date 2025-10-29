@@ -59,6 +59,7 @@ p:last-child {
   padding-bottom: 40px;
 }
 .btn-hw {
+  margin: 10px;
   padding: 10px 25px;
   background-color: #4695a0;
   border-radius: 3px;
@@ -86,15 +87,14 @@ p[id*="result"] {
 .success {
   color: rgb(18, 110, 18);
 }
-.error {
-  color: rgb(153, 17, 17);
-}
 .warning {
   color: rgb(197, 169, 12);
 }
+.error {
+  color: rgb(153, 17, 17);
+}
 input {
   padding: 10px;
-  margin: 10px;
   width: 300px;
 }
 input[type="radio"] {
