@@ -1,7 +1,7 @@
  .page-1 .tasks, .page-2 .tasks, .page-3 .tasks {
   text-align: left;
 }
-.page-7 .strings{
+.page-7 .strings, .page-10 #message, .page-10 #movies-list{
     white-space: pre-line;
 }
 .page-4 .task-five{
@@ -97,7 +97,7 @@
 }
 .input{
   grid-column: 1 / -1;
-  padding: 8px;
+  padding: 6px;
 }
 .clean{
   grid-column: 1 / 3;
@@ -113,4 +113,9 @@
 }
 .zero{
   grid-column: 1 / 3;
+}
+.page-10 .task-two{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

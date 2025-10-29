@@ -20,30 +20,44 @@
                 <p id="hw10-result-one"></p>
             </div>
             <div class="task-two">
-                <h3>Калькулятор2.0</h3>
+                <h3>Калькулятор2.0<!-- дз 5 перша версія --></h3>
                 <div class="calculate-container">
-                    <div class="item input"><form name="form"><input type="text" class="calculate-input" readonly></form></div>
-                    <div class="item clean">C</div>
-                    <div class="item back">&larr;</div>
-                    <div class="item">+</div>
-                    <div class="item">-</div>
-                    <div class="item">&times;</div>
-                    <div class="item">&divide;</div>
-                    <div class="item">7</div>
-                    <div class="item">8</div>
-                    <div class="item">9</div>
-                    <div class="item">(</div>
-                    <div class="item">4</div>
-                    <div class="item">5</div>
-                    <div class="item">6</div>
-                    <div class="item">)</div>
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                    <div class="item equal">=</div>
-                    <div class="item zero">0</div>
-                    <div class="item">.</div>
+                    <div class="item input"><input type="text" class="calculate-input" id="calculate-input" readonly></div>
+                    <div class="item clean" onclick="clean()">C</div>
+                    <div class="item back" onclick="back()">&larr;</div>
+                    <div class="item" onclick="insert('+')">+</div>
+                    <div class="item" onclick="insert('-')">-</div>
+                    <div class="item" onclick="insert('*')">&times;</div>
+                    <div class="item" onclick="insert('/')">&divide;</div>
+                    <div class="item" onclick="insert('7')">7</div>
+                    <div class="item" onclick="insert('8')">8</div>
+                    <div class="item" onclick="insert('9')">9</div>
+                    <div class="item" onclick="insert('(')">(</div>
+                    <div class="item" onclick="insert('4')">4</div>
+                    <div class="item" onclick="insert('5')">5</div>
+                    <div class="item" onclick="insert('6')">6</div>
+                    <div class="item" onclick="insert(')')">)</div>
+                    <div class="item" onclick="insert('1')">1</div>
+                    <div class="item" onclick="insert('2')">2</div>
+                    <div class="item" onclick="insert('3')">3</div>
+                    <div class="item equal" onclick="equal()">=</div>
+                    <div class="item zero" onclick="insert('0')">0</div>
+                    <div class="item" onclick="insert('.')">.</div>
                 </div>
+            </div>
+            <div class="task-three">
+                <h3>Генерація повідомлень.</h3>
+                <p id="message"></p>
+                <button class="btn-hw" id="btn1">Повідомлення 3 рази</button>
+                <button class="btn-hw" id="btn2">Зворотний лічильник</button>
+                <button class="btn-hw" id="btn3">Випадкове число</button>
+            </div>
+            <div class="task-four">
+                <h3>Кінотеатр.</h3>
+                <p id="movies-list"></p>
+                <button class="btn-hw" id="btn4">Звичайний список</button>
+                <button class="btn-hw" id="btn5">Випадковий рейтинг</button>
+                <button class="btn-hw" id="btn6">З випадковий смайликом</button>
             </div>
         </div>
         <a href="../index.html" class="btn-back">Повернутися до списку завдань</a>

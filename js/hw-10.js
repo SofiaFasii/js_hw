@@ -29,4 +29,90 @@ function checkCounter(){
     resultElement.className = 'success';
 }
 //2
-const calculate = (a, b, operation) => operation(a, b);
+const calculateInput = document.getElementById('calculate-input')
+
+const insert = num => {
+    if(calculateInput.value === 'Помилка' || calculateInput.value === 'Infinity'){
+        calculateInput.value = '';
+    }
+    
+    const lastNumber = calculateInput.value.split(/[\+\-\*\/\(\)]/).pop();
+    if(num === '.' && lastNumber.includes('.')) return;
+
+    const lastChar = calculateInput.value.slice(-1);
+    if('+-*/'.includes(lastChar) && '+-*/'.includes(num)){
+        calculateInput.value = calculateInput.value.slice(0, -1) + num;
+        return;
+    }
+    calculateInput.value += num;
+}
+const clean = () => {
+    calculateInput.value = '';
+}
+const back = () => {
+    calculateInput.value = calculateInput.value.slice(0, -1);
+}
+const equal = () => {
+    try{
+        const result = eval(calculateInput.value);
+        if(result === Infinity || isNaN(result)){
+            calculateInput.value = 'Помилка'
+        }
+        else{
+            calculateInput.value = result;
+        }
+    }
+    catch{
+        calculateInput.value = 'Помилка';
+    }
+}
+//3
+const message = document.getElementById('message');
+
+function repeatMessage(times, messageCreator){
+    for(let i = 0; i < times; i++){
+        const msg = messageCreator(i);
+        message.textContent += msg + '\n'
+    }
+}
+document.getElementById('btn1').addEventListener('click', () => {
+    message.textContent = '';
+    repeatMessage(3, i => `Повідомлення № ${i + 1}`)
+})
+document.getElementById('btn2').addEventListener('click', () => {
+    message.textContent = '';
+    repeatMessage(5, i => `Зворотній лічильник: ${5 - i}`)
+})
+document.getElementById('btn3').addEventListener('click', () => {
+    message.textContent = '';
+    repeatMessage(10, i => `Випадкове число: ${Math.floor(Math.random() * 100)}`);
+})
+//4
+const movieList = document.getElementById('movies-list');
+const movies = ['Місія нездійсненна', 'Матриця', 'Інтерстеллар', 'Гаррі Поттер', 'Крик'];
+function processMovies(movies, action){
+    for(let i = 0; i < movies.length; i++){
+        action(movies[i], i)
+    }
+}
+document.getElementById('btn4').addEventListener('click', () => {
+    movieList.textContent = ''; 
+    processMovies(movies, (movie, index) => {
+        movieList.textContent += `${index + 1}. ${movie}\n`;
+    });
+});
+document.getElementById('btn5').addEventListener('click', () => {
+    movieList.textContent = ''; 
+    processMovies(movies, (movie, index) => {
+        const rating = Math.floor(Math.random() * 5) + 1;
+        movieList.textContent += `${index + 1}. ${movie} ⭐ ${rating}/5\n`;
+    });
+});
+document.getElementById('btn6').addEventListener('click', () => {
+    movieList.textContent = ''; 
+    const emojis = ['🎬', '🤔', '😱', '😍', '🚀'];
+    processMovies(movies, movie => {
+        const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+        movieList.textContent += `${emoji} ${movie}\n`;
+    });
+});
