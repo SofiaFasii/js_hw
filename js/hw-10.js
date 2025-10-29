@@ -113,6 +113,6 @@ document.getElementById('btn6').addEventListener('click', () => {
     const emojis = ['🎬', '🤔', '😱', '😍', '🚀'];
     processMovies(movies, movie => {
         const emoji = emojis[Math.floor(Math.random() * emojis.length)];
-        movieList.textContent += `${emoji} ${movie}\n`;
+        movieList.textContent += `${movie} ${emoji}\n`;
     });
 });
