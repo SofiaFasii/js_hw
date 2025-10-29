@@ -105,7 +105,7 @@ document.getElementById('btn5').addEventListener('click', () => {
     movieList.textContent = ''; 
     processMovies(movies, (movie, index) => {
         const rating = Math.floor(Math.random() * 5) + 1;
-        movieList.textContent += `${index + 1}. ${movie} ⭐ ${rating}/5\n`;
+        movieList.textContent += `${index + 1}. ${movie} ${rating}/5 ⭐\n`;
     });
 });
 document.getElementById('btn6').addEventListener('click', () => {
