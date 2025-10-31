@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,62 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/override.css">
 </head>
+
 <body class="page-11">
     <div class="container">
         <h1>Домашнє №11</h1>
         <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
+            <div class="task-one">
+                <h3>Банк.</h3>
+                <button class="btn-hw" id="open-modal">Увійти в акаунт </button>
+
+                <div class="modal" id="modal">
+                    <div class="modal-content" id="modal-content">
+                        <button id="close">&times;</button>
+                        <h2>Вхід в акаунт</h2>
+                        <input type="text" id="username" placeholder="Ім'я">
+                        <br><br>
+                        <input type="password" id="password" placeholder="Пароль">
+                        <br>
+                        <button class="btn-hw" id="login-btn">Підтвердити</button>
+                    </div>
+                </div>
+            </div>
+            <div class="task-two">
+                <h3>Прогноз погоди.</h3>
+                <button class="btn-hw" id="weather-btn">Перевірити погоду</button>
+
+                <div class="modal" id="modal-weather">
+                    <div class="modal-content">
+                        <button id="close-weather">&times;</button>
+                        <h3>Введіть температуру (°C):</h3>
+                        <input type="number" id="input-weather" placeholder="Наприклад -5" value="0">
+                        <br>
+                        <button class="btn-hw" id="check-weather">Перевірити</button>
+                        <p id="result-weather"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="task-three">
+                <h3>Створення акаунту.</h3>
+                <button class="btn-hw" id="open-register">Реєстрація</button>
+                <button class="btn-hw" id="open-login">Вхід</button>
+
+                <div class="modal" id="">
+                    <div class="modal-content"></div>
+                </div>
+                <div class="modal" id="">
+                    <div class="modal-content"></div>
+                </div>
+                <div class="modal" id="">
+                    <div class="modal-content"></div>
+                </div>
+            </div>
         </div>
         <a href="../index.html" class="btn-back">Повернутися до списку завдань</a>
     </div>
     <script src="../js/hw-11.js"></script>
 </body>
+
 </html>
