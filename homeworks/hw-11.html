@@ -50,14 +50,33 @@
                 <button class="btn-hw" id="open-register">Реєстрація</button>
                 <button class="btn-hw" id="open-login">Вхід</button>
 
-                <div class="modal" id="">
-                    <div class="modal-content"></div>
+                <div class="modal" id="modal-register">
+                    <div class="modal-content">
+                        <button id="close-reg">&times;</button>
+                        <h2>Реєстрація</h2>
+                        <input type="text" id="reg-name" placeholder="Ім'я"><br><br>
+                        <input type="gmail" id="reg-gmail" placeholder="Почта"><br><br>
+                        <input type="password" id="reg-password" placeholder="Пароль">
+                        <button class="btn-hw" id="reg-btn">Зареєструватися</button>
+                    </div>
                 </div>
-                <div class="modal" id="">
-                    <div class="modal-content"></div>
+                <div class="modal" id="modal-login">
+                    <div class="modal-content">
+                        <button id="close-log">&times;</button>
+                        <h2>Вхід</h2>
+                        <input type="gmail" id="log-gmail" placeholder="Почта"><br><br>
+                        <input type="password" id="log-password" placeholder="Пароль">
+                        <button class="btn-hw" id="log-btn">Увійти</button>
+                    </div>
                 </div>
-                <div class="modal" id="">
-                    <div class="modal-content"></div>
+                <div class="modal" id="modal-user">
+                    <div class="modal-content">
+                        <button id="close-usr">&times;</button>
+                        <h2 id="usr-greeting"></h2>
+                        <input type="text" id="usr-input" placeholder="Нова задача">
+                        <button class="btn-hw" id="usr-btn">Додати</button>
+                        <ul id="usr-list"></ul>
+                    </div>
                 </div>
             </div>
         </div>
