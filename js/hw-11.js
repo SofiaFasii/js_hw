@@ -234,10 +234,10 @@ const movie = {
     rating: '',
     evaluate(){
         if(this.rating >= 1 && this.rating <= 6){
-            return {text:`Фільм ${this.title} не дуже ${this.rating} 😕`, class: 'error'}
+            return {text:`Фільм ${this.title} не дуже ${this.rating}/10 😕`, class: 'error'}
         }
         else if(this.rating >= 7 && this.rating <= 10){
-             return {text: `Фільм ${this.title} класний! ${this.rating} 😍`, class: 'success'}
+             return {text: `Фільм ${this.title} класний! ${this.rating}/10 😍`, class: 'success'}
         }
         else{
             return {text:`Оцінка має бути від 1 до 10! 😅`, class: 'warning'}
