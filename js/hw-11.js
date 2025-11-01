@@ -226,3 +226,40 @@ usrBtn.onclick = () => {
     usrInput.value = '';
     renderTodo();
 }
+//4
+const movie = {
+    title: '',
+    director: '',
+    year: '',
+    rating: '',
+    evaluate(){
+        if(this.rating >= 1 && this.rating <= 6){
+            return {text:`Фільм ${this.title} не дуже ${this.rating} 😕`, class: 'error'}
+        }
+        else if(this.rating >= 7 && this.rating <= 10){
+             return {text: `Фільм ${this.title} класний! ${this.rating} 😍`, class: 'success'}
+        }
+        else{
+            return {text:`Оцінка має бути від 1 до 10! 😅`, class: 'warning'}
+        }
+    }
+}
+const openRat = document.getElementById('open-rat');
+const modalRat = document.getElementById('modal-rating');
+const checkRat = document.getElementById('check-rat');
+const resultRat = document.getElementById('result-rating');
+
+openRat.onclick = () => modalRat.style.display = 'flex';
+document.getElementById('close-rat').onclick = () => modalRat.style.display = 'none';
+window.onclick = event => {if(event.target === modalRat) modalRat.style.display = 'none'};
+document.addEventListener('keydown', event => {if(event.key === 'Escape') modalRat.style.display = 'none'})
+
+checkRat.onclick = () => {
+    movie.title = document.getElementById('rat-text').value;
+    movie.rating = document.getElementById('rat-num').value;
+
+    const result = movie.evaluate();
+    resultRat.className = '';
+    resultRat.classList.add(result.class)
+    resultRat.textContent = result.text
+}
