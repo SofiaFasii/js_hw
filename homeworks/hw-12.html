@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,52 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/override.css">
 </head>
+
 <body class="page-12">
     <div class="container">
         <h1>Домашнє №12</h1>
         <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
+            <div class="task-one">
+                <h3>Інформація про користувача.</h3>
+                <div id="user-info"></div>
+                <button class="btn-hw" id="change">Змінити</button>
+            </div>
+            <div class="task-two">
+                <h3>Підрахунок властивостей.</h3>
+                <input type="text" id="obj-input" placeholder='Введіть об’єкт, напр. {"name":"Sofi","age":14}'>
+                <button class="btn-hw" id="count-btn">Порахувати</button>
+                <p id="obj-result"></p>
+            </div>
+            <div class="task-three-four">
+                <h3>Виконання найбільшої кількості задач і виплата зарплати.</h3>
+                <ul id="employee-list"></ul>
+                <button class="btn-hw" id="best-btn">Показати найкращого</button>
+                <button class="btn-hw" id="salary-btn">Показати зарплату</button>
+            </div>
+            <div class="task-five">
+                <h3>Перевірити властивість.</h3>
+                <input type="text" id="prop-input" placeholder="Введіть властивість (title, director, year)">
+                <button class="btn-hw" id="prop-btn">Показати значення</button>
+                <p id="prop-result"></p>
+            </div>
+            <div class="task-six">
+                <h3>Перевірка вартості.</h3>
+                <p id="cost-res"></p>
+                <button class="btn-hw" id="cost-btn">Перевірити вартість</button>
+            </div>
+            <div class="task-seven">
+                <h3>Особистий кабінет.</h3>
+                <p id="balance">Поточний баланс: 0 грн.</p>
+                <p id="history">Історія транзакцій буде тут...</p>
+                <button class="btn-hw" id="deposit-btn">Поповнити баланс</button>
+                <button class="btn-hw" id="withdraw-btn">Зняти гроші</button>
+                <button class="btn-hw" id="history-btn">Показати історію</button>
+            </div>
         </div>
         <a href="../index.html" class="btn-back">Повернутися до списку завдань</a>
     </div>
     <script src="../js/hw-12.js"></script>
 </body>
+
 </html>
