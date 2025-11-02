@@ -4,9 +4,17 @@ const bankAccount = {
     ownerName: '',
     accountNumber: '',
     balance: 2573,
-    login(name){this.ownerName = name;},
-    deposit(amount){this.balance += amount;},
-    withdraw(amount){this.balance -= amount;}
+    login(name){
+        this.ownerName = name;
+    },
+    deposit(amount){
+        const{balance} = this;
+        this.balance = balance + amount;
+    },
+    withdraw(amount){
+        const{balance} = this;
+        this.balance = balance - amount;
+    }
 }
 const openModal = document.getElementById('open-modal');
 const modal = document.getElementById('modal');
@@ -27,15 +35,16 @@ loginBtn.addEventListener('click', () => {
 
     if (name && password) {
         bankAccount.login(name);
-
+        
+        const {ownerName, balance} = bankAccount;
         modalContent.innerHTML = `
             <button id="close">&times;</button>
-            <h2>Вітаю, ${bankAccount.ownerName}!</h2>
+            <h2>Вітаю, ${ownerName}!</h2>
             <p id="result" style="color: #4b4b4b;">Сьогодні ви оберете?</p>
             <button class="btn-hw" id="deposit-btn">Поповнити рахунок</button>
             <button class="btn-hw" id="withdraw-btn">Зняти гроші</button>
             <br><br>
-            <p id="balance">Баланс: ${bankAccount.balance} грн.</p>
+            <p id="balance">Баланс: ${balance} грн.</p>
         `;
 
         document.getElementById('close').addEventListener('click', () => modal.style.display = 'none')
@@ -55,16 +64,18 @@ loginBtn.addEventListener('click', () => {
 
         document.getElementById('withdraw-btn').addEventListener('click', () => {
             const enterdPass = prompt('Введіть пароль для підтвердження');
+            const {balance} = bankAccount;
             if (enterdPass === password) {
                 const amount = Number(prompt('Скільки грошей хочете зняти?'));
                 if (isNaN(amount) || amount <= 0) {
                     alert('Введіть правильну суму!');
-                } else if (amount > bankAccount.balance) {
+                } 
+                else if (amount > balance) {
                     alert('Недостатньо коштів на рахунку!');
                 }
                 else {
                     bankAccount.withdraw(amount);
-                    document.getElementById('balance').textContent = `Баланс: ${bankAccount.balance} грн.`;
+                    document.getElementById('balance').textContent = `Баланс: ${balance} грн.`;
                 }
             }
             else alert('Неправильний пароль!');
@@ -80,7 +91,8 @@ const weather = {
     humidity: 0,
     windSpeed: 0,
     forecast(){
-        return this.temperature < 0;
+        const {temperature} = this;
+        return temperature < 0;
     },
 }
 const openWeather = document.getElementById('weather-btn');
@@ -115,10 +127,8 @@ const user = {
     name: '',
     email: '',
     password: '',
-    register(name, email, password){
-        this.name = name;
-        this.email = email;
-        this.password = password;
+    register(name, email, password){// Object вбудовайний глоб об'єкт який містить методи роботи з об | assign метод Object який дозволяє копіювати властивості з одного або декілька об'єктів  в інший об
+        Object.assign(this, {name, email, password})
     },
     login(email, password){return this.email === email && this.password === password},
 }
@@ -233,11 +243,12 @@ const movie = {
     year: '',
     rating: '',
     evaluate(){
-        if(this.rating >= 1 && this.rating <= 6){
-            return {text:`Фільм ${this.title} не дуже ${this.rating}/10 😕`, class: 'error'}
+        const {title, rating} = this;
+        if(rating >= 1 && rating <= 6){
+            return {text:`Фільм ${title} не дуже ${rating}/10 😕`, class: 'error'}
         }
-        else if(this.rating >= 7 && this.rating <= 10){
-             return {text: `Фільм ${this.title} класний! ${this.rating}/10 😍`, class: 'success'}
+        else if(rating >= 7 && rating <= 10){
+             return {text: `Фільм ${title} класний! ${rating}/10 😍`, class: 'success'}
         }
         else{
             return {text:`Оцінка має бути від 1 до 10! 😅`, class: 'warning'}

@@ -19,9 +19,7 @@ function showUserInfo(){
 }
 showUserInfo()
 change.onclick = () => {
-    user.mood = 'happy';
-    user.hobby = 'skydiving';
-    user.premium = false;
+    Object.assign(user, {mood: 'happy', hobby: 'skydiving', premium: false})
     showUserInfo()
 }
 //2
@@ -118,9 +116,11 @@ const products = [
     {name: 'Банан', price: 8, quantity: 7},
     {name: 'Апельсин', price: 6, quantity: 12},
 ]
-function calculateTotalPrice(allProducts, productName) {
+function calculateTotalPrice(allProducts, productName) {//find() шукає перший об’єкт у масиві, що підходить під умову
     const product = allProducts.find(item => item.name === productName);
-    return product ? product.price * product.quantity : 0;
+    if (!product) return 0; 
+    const {price, quantity} = product;
+    return price * quantity;
 }
 function showAllTotals() {
     const totalApple = calculateTotalPrice(products, 'Яблуко');
