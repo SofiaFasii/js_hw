@@ -133,6 +133,6 @@ document.querySelector('.check-skills').addEventListener('click', () => {
         });
         return skills.sort();
     }
-    const skills = getSortedUniqueSkills(users); // отримали масив умінь
-    result.textContent = skills.join('\n');       // вивели на сторінку
+    const skills = getSortedUniqueSkills(users);
+    result.textContent = skills.join('\n');
 });
