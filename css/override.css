@@ -1,7 +1,7 @@
  .page-1 .tasks, .page-2 .tasks, .page-3 .tasks {
   text-align: left;
 }
-.page-7 .strings, .page-10 #message, .page-10 #movies-list{
+.page-7 .strings, .page-10 #message, .page-10 #movies-list, .page-15 p{
     white-space: pre-line;
 }
 .page-4 .task-five{
