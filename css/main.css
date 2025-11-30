@@ -75,7 +75,7 @@ p:last-child {
   text-align: center;
 }
 .tasks p {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   font-size: 1.3em;
 }
 p[id*="result"] {
