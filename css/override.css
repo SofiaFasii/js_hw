@@ -129,3 +129,15 @@
   background-color: #c8f7c5;
   font-weight: bold;
 }
+/* 17 */
+.page-17 .task-three img{
+  background-color: #54ff2088;
+}
+.page-17 .task-three .link-17{
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+.page-17 .task-three .link-17:hover{
+  background: #2d426b;
+}
