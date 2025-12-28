@@ -141,3 +141,23 @@
 .page-17 .task-three .link-17:hover{
   background: #2d426b;
 }
+/* 18 */
+.page-18 li{
+  margin: 0;
+}
+.page-18 ul#categories{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 50px;
+}
+.page-18 #gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.page-18 .gallery-img{
+  max-height: 180px;
+}
