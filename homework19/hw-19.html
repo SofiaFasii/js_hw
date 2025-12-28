@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Домашнє №19</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/override.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/override.css" />
 </head>
+
 <body class="page-19">
     <div class="container">
         <h1>Домашнє №19</h1>
         <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
+            <div class="task-one">
+                <h3>Завдання 1</h3>
+                <form>
+                    <p>Choose a color:</p>
+                    <label>
+                        <input type="radio" name="color" value="red" />
+                        Red
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="white" />
+                        White
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="green" />
+                        Green
+                    </label>
+                </form>
+            </div>
+            <div class="task-two">
+                <h3>Завдання 2</h3>
+                <input type="text" placeholder="Ваше ім'я?" id="name-input" /><br /><br />
+                <p>Привіт, <span id="name-output">незнайомець</span>!</p>
+                <br />
+                <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символів" />
+            </div>
+            <div class="tasl-three">
+                <h3>Завдання 3</h3>
+                <input id="font-size-control" type="range" />
+                <br/>
+                <span id="text">Абракадабра!</span>
+            </div>
         </div>
         <a href="../index.html" class="btn-back">Повернутися до списку завдань</a>
     </div>
-    <script src="./js/hw-19.js"></script>
+    <script src="./hw-19.js"></script>
 </body>
+
 </html>

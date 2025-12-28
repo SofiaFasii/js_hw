@@ -161,3 +161,19 @@
 .page-18 .gallery-img{
   max-height: 180px;
 }
+/* 19 */
+.page-19  label{
+  padding: 10px;
+}
+.page-19 label input{
+  width: 10px;
+}
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+#validation-input.valid {
+  border-color: #4caf50;
+}
+#validation-input.invalid {
+  border-color: #f44336;
+}
