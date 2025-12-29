@@ -21,11 +21,11 @@ galleryImages.forEach((image, index) => {
 document.addEventListener('keydown', (event) => {
     if(fullImageContainer.style.display !== 'flex') return;
     
-    if(event.key === 'ArrowRight' || event.key === 'd'){
+    if(event.key === 'ArrowRight'){
         currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
         fullImage.src = galleryImages[currentImageIndex].src
     }
-    else if(event.key === 'ArrowLeft' || event.key === 'a'){
+    else if(event.key === 'ArrowLeft'){
         currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
         fullImage.src = galleryImages[currentImageIndex].src
     }
