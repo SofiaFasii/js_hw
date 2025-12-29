@@ -20,19 +20,17 @@ galleryImages.forEach((image, index) => {
 
 document.addEventListener('keydown', (event) => {
     if(fullImageContainer.style.display !== 'flex') return;
-
-    const key = event.key;
     
-    if(key === 'ArrowRight' || key.toLowerCase() === 'd'){
+    if(event.key === 'ArrowRight' || event.key === 'd'){
         currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
         fullImage.src = galleryImages[currentImageIndex].src
     }
-    else if(key === 'ArrowLeft' || key.toLowerCase() === 'a'){
+    else if(event.key === 'ArrowLeft' || event.key === 'a'){
         currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
         fullImage.src = galleryImages[currentImageIndex].src
     }
 
-    if(key === 'Escape') closeImage()
+    if(event.key === 'Escape') closeImage()
 })
 
 document.querySelector('.btn-closee').addEventListener('click', closeImage)
