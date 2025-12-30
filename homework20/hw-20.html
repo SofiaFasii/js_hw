@@ -15,16 +15,20 @@
         <div class="tasks">
             <h2>Результат виконання з'явиться тут:</h2>
             <div class="task-one">
-                <h3>Завдання 1 (&larr; &rarr;)</h3>
+                <h3>Завдання 1 (a d , &larr; &rarr;)</h3>
                 <ul class="gallery">
                     <li>
                         <img class="image" src="https://picsum.photos/seed/picsum/1000/700" alt="зображення" />
                     </li>
                     <li>
-                        <img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення" />
+                        <img class="image"
+                            src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="зображення" />
                     </li>
                     <li>
-                        <img class="image" src="https://images.pexels.com/photos/11815778/pexels-photo-11815778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення" />
+                        <img class="image"
+                            src="https://images.pexels.com/photos/11815778/pexels-photo-11815778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="зображення" />
                     </li>
                     <li>
                         <img class="image"
@@ -44,8 +48,17 @@
                 </ul>
                 <div class="full-image-container">
                     <span class="btn-closee">&times;</span>
-                    <img src="" alt="збільшене зображення" class="full-image">
+                    <img src="" alt="збільшене зображення" class="full-image" />
                 </div>
+            </div>
+            <div class="task-two">
+                <h3>Завдання 2</h3>
+                <div id="controls">
+                    <input type="number" min="0" max="100" step="1" /><br><br>
+                    <button type="button" class="btn-hw" data-action="render">Створити</button>
+                    <button type="button" class="btn-hw" data-action="destroy">Очистити</button>
+                </div>
+                <div id="boxes"></div>
             </div>
         </div>
         <a href="../index.html" class="btn-back">Повернутися до списку завдань</a>
